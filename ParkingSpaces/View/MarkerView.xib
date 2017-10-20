@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13189.4" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13165.3"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view userInteractionEnabled="NO" contentMode="scaleToFill" id="iN0-l3-epB" customClass="MarkerView" customModule="ParkingSpaces" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="154" height="144"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="location_marker" translatesAutoresizingMaskIntoConstraints="NO" id="qvD-8A-pgS" userLabel="Marker Image View">
+                    <rect key="frame" x="0.0" y="0.0" width="154" height="144"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12£" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tGU-4z-Bth" userLabel="Price Label">
+                    <rect key="frame" x="31" y="52.5" width="92" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <constraints>
+                <constraint firstItem="tGU-4z-Bth" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" multiplier="0.85" id="1w2-C7-6r3"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="qvD-8A-pgS" secondAttribute="trailing" id="DA6-jD-YLV"/>
+                <constraint firstItem="tGU-4z-Bth" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="0.6" id="RXW-Q9-cIK"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="qvD-8A-pgS" secondAttribute="bottom" id="Wtq-66-3vB"/>
+                <constraint firstItem="tGU-4z-Bth" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="bmy-gS-HIs"/>
+                <constraint firstItem="qvD-8A-pgS" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="gld-gn-1Xf"/>
+                <constraint firstItem="qvD-8A-pgS" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="i5K-AM-AQL"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="label" destination="tGU-4z-Bth" id="9mA-2d-lZ9"/>
+            </connections>
+            <point key="canvasLocation" x="-77" y="-208"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="location_marker" width="64" height="64"/>
+    </resources>
+</document>

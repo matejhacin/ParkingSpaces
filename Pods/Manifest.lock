@@ -1,0 +1,27 @@
+PODS:
+  - Alamofire (4.5.1)
+  - AlamofireImage (3.3.0):
+    - Alamofire (~> 4.5)
+  - AZDialogView (1.1.5)
+  - RxAlamofire (3.0.3):
+    - RxAlamofire/Core (= 3.0.3)
+  - RxAlamofire/Core (3.0.3):
+    - Alamofire (~> 4.0)
+    - RxSwift (~> 3.0)
+  - RxSwift (3.6.1)
+
+DEPENDENCIES:
+  - AlamofireImage (~> 3.3)
+  - AZDialogView
+  - RxAlamofire
+
+SPEC CHECKSUMS:
+  Alamofire: 2d95912bf4c34f164fdfc335872e8c312acaea4a
+  AlamofireImage: 2e784dc5d00f04903a52c1d169181469c805c3df
+  AZDialogView: 25b0bcbc260e56b43228c0b72ee8bbf48abcbfaa
+  RxAlamofire: 5eb39188c4917ad98127c0ecb4878a61b7517003
+  RxSwift: f9de85ea20cd2f7716ee5409fc13523dc638e4e4
+
+PODFILE CHECKSUM: 1b67c0641c911975a50b7d62752f3ab47235531e
+
+COCOAPODS: 1.2.1
